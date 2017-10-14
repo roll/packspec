@@ -307,4 +307,4 @@ php composer test
 
 ### v0.4
 
-Proof of concept for the specification and test runners.
+Proof of concept version for the specification and test runners.
