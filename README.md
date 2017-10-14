@@ -1,6 +1,6 @@
 # PackSpec
 
-[![Version](https://img.shields.io/badge/Version-v0.4-green.svg)](https://github.com/packspec/packspec#changelog)
+[![Version](https://img.shields.io/badge/Version-v0.4-orange.svg)](https://github.com/packspec/packspec#changelog)
 
 Cross-language testings made easy: unified YML-based package specification and Python/JavaScript/Ruby/PHP test runners.
 
