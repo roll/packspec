@@ -305,6 +305,6 @@ php composer test
 
 ## Changelog
 
-### v0.x
+### v0.4
 
-Proof of concept version of the standard and test runners.
+Proof of concept version of the specification and test runners.
