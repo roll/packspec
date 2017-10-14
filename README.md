@@ -184,7 +184,7 @@ As we could see the PHP `tableschema` implementation has a slightly different AP
 
 ### Examples
 
-Take a look how it works on a real world projcts:
+Take a look how it works on a real world projects:
 
 - [Frictionless Data's testsuite](https://github.com/frictionlessdata/testsuite-basic)
 
