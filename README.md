@@ -213,9 +213,10 @@ py: |
 
 # Add `make_datetime` function
 js: |
-  const moment = require('moment')
-  makeDatetime = (year, month, ...args) => {
-    return new Date(year, month - 1, ...args)
+  module.exports = {
+    makeDatetime: function(year, month, ...args) {
+      return new Date(year, month - 1, ...args)
+    },
   }
 ```
 
