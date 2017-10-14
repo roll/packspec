@@ -1,9 +1,5 @@
 # PackSpec
 
-[![Python](https://img.shields.io/travis/packspec/packspec-py/master.svg?label=Python)](https://travis-ci.org/packspec/packspec-py)
-[![JavaScript](https://img.shields.io/travis/packspec/packspec-js/master.svg?label=JavaScript)](https://travis-ci.org/packspec/packspec-js)
-[![Ruby](https://img.shields.io/travis/packspec/packspec-rb/master.svg?label=Ruby)](https://travis-ci.org/packspec/packspec-rb)
-[![PHP](https://img.shields.io/travis/packspec/packspec-php/master.svg?label=PHP)](https://travis-ci.org/packspec/packspec-php)
 [![Version](https://img.shields.io/badge/Version-v0.4-orange.svg)](https://github.com/packspec/packspec#changelog)
 
 Cross-language testings made easy: unified YML-based package specification and Python/JavaScript/Ruby/PHP test runners.
