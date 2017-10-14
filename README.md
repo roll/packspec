@@ -135,7 +135,7 @@ $ packspec-php # or php vendor/packspec/packspec/bin/packspec-php
  ✔  tableschema: 8/8
 ```
 
-As we could see the PHP `tableschema` implementation has a slightly different API so we use an alternative call to create a `field`.
+As we could see the PHP `tableschema` implementation has a slightly different API so we use an alternative call to create a `field`. To make it possible we have used a statement filter by language (see below).
 
 That's it! We was able to write the test specification once and then run it against 4 different languages!
 
