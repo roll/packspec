@@ -94,64 +94,19 @@ $ packspec-py
  ✔  tableschema: 9/9
 ```
 
-As we could see we pass all tests. Under the hood PackSpec specification has been translated to Python language and then evaluated. Ok. Let's test against JavaScript:
+As we could see we pass all tests. Under the hood PackSpec specification has been translated to Python language and then evaluated. Ok. Let's test against JavaScript and Ruby:
 
 ```bash
 $ packspec-js # or ./node_modules/.bin/packspec-js
-
- #  JavaScript
-
-➖➖➖
-
- #  tableschema
-
- ✔️  tableschema = $import("tableschema")
-
- #  Field - integer
-
- ✔️  descriptor = {"name":"name","type":"integer"}
- ✔️  field = tableschema.Field(descriptor)
- ➖  field = tableschema.FieldsFactory.field(descriptor)
- ✔️  field.type == "integer"
- ✔️  field.format == "default"
- ✔️  field.castValue("")
- ✔️  field.castValue(1) == 1
- ✔️  field.castValue("1") == 1
- ✔️  field.castValue("3.14") == ERROR
-
- ✔️  tableschema: 9/9
-```
-
-We've got the same result. It passes all test for JavaScript. Let's try Ruby:
-
-```bash
 $ packspec-rb
 
- #  Ruby
+ #  JavaScript/Ruby
+ ...
+ ✔  tableschema: 9/9
 
-➖➖➖
-
-
- # tableschema
-
- ✔️  tableschema = $import("tableschema")
-
- # Field - integer
-
- ✔️  descriptor = {"name":"name","type":"integer"}
- ✔️  field = tableschema.Field({"descriptor":null})
- ➖  field = tableschema.FieldsFactory.field({"descriptor":null})
- ✔️  field.type == "integer"
- ✔️  field.format == "default"
- ✔️  field.cast_value("")
- ✔️  field.cast_value(1) == 1
- ✔️  field.cast_value("1") == 1
- ✔️  field.cast_value("3.14") == ERROR
-
- ✔️  tableschema: 9/9
 ```
 
-Test for Ruby also work. Only PHP is left:
+For both test runners we've got exactly the same result as we have for Python. It passes all test for JavaScript and Ruby. Let's run it for PHP:
 
 ```bash
 $ packspec-php # or php vendor/packspec/packspec/bin/packspec-php
@@ -180,7 +135,9 @@ $ packspec-php # or php vendor/packspec/packspec/bin/packspec-php
  ✔  tableschema: 8/8
 ```
 
-As we could see the PHP `tableschema` implementation has a slightly different API so we use an alternative call. That's it! We was able to write the test specification once and then run it against 4 different languages!
+As we could see the PHP `tableschema` implementation has a slightly different API so we use an alternative call to create a `field`.
+
+That's it! We was able to write the test specification once and then run it against 4 different languages!
 
 ### Examples
 
