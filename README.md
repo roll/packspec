@@ -184,9 +184,9 @@ As we could see the PHP `tableschema` implementation has a slightly different AP
 
 ### Examples
 
-To see how it works for a real world applications take a look on a Frictionless Data's testsuite for different language implementations of the Frictonless Data specs:
+Take a look how it works on a real world projcts:
 
-[![](https://i.imgur.com/JQe1Ets.png)]((https://github.com/frictionlessdata/testsuite-basic))
+- [Frictionless Data's testsuite](https://github.com/frictionlessdata/testsuite-basic)
 
 
 ## Documentation
