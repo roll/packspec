@@ -179,7 +179,7 @@ The PackSpec language is an YML-based high-level abstract language for writing a
 - function: ['value1', kwarg=: 'value2', ==: ERROR]
 
 # Object instantiation and property access
-- object=: module.Class('value1')
+- object=module.Class: ['value1']
 - object.property=: 'value2'
 - object.property==: 'value2'
 - object.method: ['value3', ==: 'value4']
